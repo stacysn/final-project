@@ -45,7 +45,8 @@ class BeachList extends Component {
           });
       });
     }
-
+['Cowells', 'Pleasure Point', '38th', 'Steamers']
+// TODO: Iterate through a list of names, and create component links with those names instead of hard coding 4 different selectors and links
 //click events for each particular beach; try to simplify!
     selectedPleasurePoint = (event) => {
       console.log("Pleasure Point");
@@ -82,6 +83,8 @@ class BeachList extends Component {
               <h3><a href="#" className="waves-effect waves-light btn-large list-group-item-action black lighten-2" id="38th-ave" onClick={this.selected38th}>{this.state.beachSpotList[3]}</a></h3>
           </div>
         )
+
+        // React Router to link to different views.
       } else if (this.state.selectedBeach === 0) {
         return (
           <BeachPage selectedBeachNumber={this.state.selectedBeachNumber} userName={this.props.userName} beachSpotList={this.state.beachSpotList[0]} date={this.state.date} currentTime={this.state.currentTime}/>

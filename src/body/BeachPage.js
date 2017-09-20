@@ -25,7 +25,7 @@ class BeachPage extends Component {
 
   componentDidMount(){
     // var dis = this;
-    let beachURL = `https://cors-anywhere.herokuapp.com/http://api.spitcast.com/api/spot/forecast/${this.props.selectedBeachNumber}`
+    let beachURL = `http://api.spitcast.com/api/spot/forecast/${this.props.selectedBeachNumber}`
     $.get(beachURL)
     .done((res) => {
       console.log("RESSSSSSSSSS", res);

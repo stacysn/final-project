@@ -50,6 +50,7 @@ class App extends Component {
       this.toggleSignupModal()
     },
     (err) => {
+      // TODO: Consider using a flash message instead of alert
       alert('User already exists')
     })
   }
@@ -77,11 +78,11 @@ class App extends Component {
       }
     })
     .then((res) => {
-      console.log(res, "User is authenticated");
       this.setState({userId: res._id, isLoggedIn: true})
       this.toggleSignInModal
     },
     (err) => {
+      // TODO: Consider using a flash message instead of alert
       alert("Your Credentials are Incorrect")
       this.setState({
         userName: '',
@@ -100,6 +101,7 @@ class App extends Component {
       return (
         <div className="home">
             <div className="background-image-container" style={{height: '500px', postition: 'relative', width: '100vw', overflow: "hidden"}}>
+            {/* TODO: consider hosting your image locally instead of using imgur. */}
               <div className="background-image" style={{postion: 'absolute', top: '0', bottom: '0', right: '0', left: '0'}}> <img src="https://i.imgur.com/Z75BVf5.jpg"/></div>
             </div>
 
