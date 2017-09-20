@@ -32,16 +32,29 @@ app.use('/api', router);
 router.get('/beaches', controllers.beach.getAllBeaches)
 router.get('/beaches/:beachId', controllers.beach.getOneBeach)
 
+
+
 //******Beach Posts *****//
 router.get('/beaches/:beachId/beachPosts', controllers.beachPost.getAllBeachPosts)
 router.post('/beaches/:beachId/beachPosts', controllers.beachPost.newBeachPost)
 
+/* router.route('/beaches/:beachId/beachPosts')
+    .get(controllers.beachPost.getAllBeaches)
+    .post(controllers.beachPost.newBeachPost)
+*/
 router.get('/beaches/:beachId/beachPosts/:id', controllers.beachPost.getOne)
 router.put('/beaches/:beachId/beachPosts/:id', controllers.beachPost.updateBeachPost)
 router.delete('/beaches/:beachId/beachPosts/:id', controllers.beachPost.destroy)
+/* router.route('/beaches/:beachId/beachPosts/:id')
+    .get(controllers.beachPost.getOne)
+    .put(controllers.beachPost.updateBeachPost)
+    .delete(controllers.beachPost.destroy)
+*/
 
-
+//TODO: Stretch: extract all routes to a separate file called routes.js
+/// example: https://github.com/wdi-atx-11/passport-auth-lab/blob/master/solution-code/server.js
 //set route path and init API
+
 router.get('/', function(req,res) {
   res.json({message: 'API Initialized!'});
 });

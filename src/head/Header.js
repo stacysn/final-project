@@ -10,6 +10,7 @@ class Header extends Component {
         <div className="home">
             <nav className='black lighten-1'>
               <a className="brand-logo center">
+              {// TODO Consider using a for loop LOL}
                 <img src="../images/seasIt.png"/>
                 <img src="../images/seasIt.png"/>
                 <img src="../images/seasIt.png"/>
