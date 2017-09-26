@@ -119,6 +119,9 @@ class App extends Component {
             </div>
           </div>
 
+          <Route path="/beachList" render={props=> {}}
+
+
           <footer className="page-footer black">
             <div className="container">
               <div className="row">
