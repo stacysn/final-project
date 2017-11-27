@@ -18,7 +18,7 @@ class Header extends Component {
                 <img src="../images/seasIt.png"/>
               </a>
               <a className='brand-logo center'>Seas it</a>
-              <ul id='nav-list' className='right hide-on-med-and-down'>
+              <ul id='nav-list' className='right'>
                 <li><a onClick={this.props.toggleSignInModal}>Sign In</a></li>
                 <li><a onClick={this.props.toggleSignupModal}>Sign Up</a></li>
               </ul>
@@ -42,7 +42,7 @@ class Header extends Component {
             <img src="../images/seasIt.png"/>
           </a>
           <a className='brand-logo'>Seas it</a>
-          <ul id='navList' className='right hide-on-med-and-down'>
+          <ul id='navList' className='right'>
             <li><a>Welcome {this.props.userName}!</a></li>
             <li><a onClick={this.props.handleLogOut}>Log Out</a></li>
           </ul>
