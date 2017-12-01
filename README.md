@@ -36,6 +36,12 @@ Some of the top favorite beaches in Santa Cruz for surfing.
 - User can have access to the 4 beaches
 - User can chat under each beach page with fellow surfers
 
+#### Installation:
+1.) `npm install` to install dependencies
+2.) `mongod` to run the server
+3.) `npm start`
+4.) localhost:3000
+
 #### Future Features:
 - Have more charts and data about each beach
 - Add more beaches
