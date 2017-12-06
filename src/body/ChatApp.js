@@ -15,7 +15,6 @@ class ChatApp extends Component{
         messages: [],
         text: ''
       }
-
   }
 
   componentDidMount = () => {
@@ -78,19 +77,6 @@ class ChatApp extends Component{
       this.setState({messages});
       socket.emit('send:message', message);
   }
-
-  // handleChangeName = (newName) => {
-  //     var oldName = this.state.user;
-  //     socket.emit('change:name', { name : newName}, (result) => {
-  //         if(!result) {
-  //             return alert('There was an error changing your name');
-  //         }
-  //         var {users} = this.state;
-  //         var index = users.indexOf(oldName);
-  //         users.splice(index, 1, newName);
-  //         this.setState({users, user: newName});
-  //     });
-  // }
 
   render() {
       return (

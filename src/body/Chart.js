@@ -2,10 +2,8 @@ import React, { Component } from 'react'
 import {Bar} from 'react-chartjs-2'
 import $ from 'jquery'
 
-
 class Chart extends Component{
   render(){
-    console.log("THIS.PROPS.DATA", this.props.data);
     return (
       <div className="chart">
         <Bar
