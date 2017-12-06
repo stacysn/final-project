@@ -48,25 +48,21 @@ class BeachList extends Component {
 
 //click events for each particular beach; try to simplify!
     selectedPleasurePoint = (event) => {
-      console.log("Pleasure Point");
       this.setState({selectedBeach:0})
       this.setState({selectedBeachNumber: 1})
     }
 
     selectedSteamers = (event) => {
-      console.log("STEAMERS");
       this.setState({selectedBeach:1})
       this.setState({selectedBeachNumber: 2})
     }
 
     selectedCowells = (event) => {
-      console.log("COWELLS");
       this.setState({selectedBeach:2})
       this.setState({selectedBeachNumber: 3})
     }
 
     selected38th = (event) => {
-      console.log("38th");
       this.setState({selectedBeach:3})
       this.setState({selectedBeachNumber: 4})
     }
