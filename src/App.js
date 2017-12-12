@@ -46,7 +46,6 @@ class App extends Component {
       }
     })
     .then((res) => {
-      console.log(res);
       this.toggleSignupModal()
     },
     (err) => {
@@ -77,7 +76,6 @@ class App extends Component {
       }
     })
     .then((res) => {
-      console.log(res, "User is authenticated");
       this.setState({userId: res._id, isLoggedIn: true})
       this.toggleSignInModal
     },
@@ -122,13 +120,13 @@ class App extends Component {
             <div className="container">
               <div className="row">
                 <div className="col l6 s12">
-                  <h5 className="white-text">About </h5>
-                  <p className="grey-text text-lighten-4"> This website is retrieving daily information using the API from <a href="http://www.Spitcast.com">Spitcast</a></p>
+                  <h4 className="white-text">About </h4>
+                  <p className="grey-text text-lighten-4" style={{fontSize: '20px'}}> This website is retrieving daily information using the API from <a href="http://www.Spitcast.com">Spitcast</a></p>
                 </div>
               </div>
             </div>
             <div className="footer-copyright">
-              <div className="container">
+              <div className="container" style={{fontSize: '16px'}}>
               © 2017 Copyright StaySeaFunSurf
               Created by <a href='http://stacysuen.rocks'>Stacy Suen</a>
               </div>
