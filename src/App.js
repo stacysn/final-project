@@ -32,6 +32,7 @@ class App extends Component {
   toggleSignupModal = () => {
     this.setState({isSignUpOpen: !this.state.isSignUpOpen})
   }
+
   handleSignupSubmit = (event) => {
     event.preventDefault()
     $.ajax({
@@ -94,7 +95,6 @@ class App extends Component {
   handleLogOut = (event) => {
     this.setState({isLoggedIn:false})
   }
-
 
     render (){
       return (
