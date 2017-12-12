@@ -15,7 +15,6 @@ class Header extends Component {
                 <img src="../images/seasIt.png"/>
                 <img src="../images/seasIt.png"/>
                 <img src="../images/seasIt.png"/>
-                <img src="../images/seasIt.png"/>
               </a>
               <a className='brand-logo center'>Seas it</a>
               <ul id='nav-list' className='right'>
@@ -35,7 +34,6 @@ class Header extends Component {
       <header>
         <nav className='black lighten-1 center'>
           <a className="brand-logo center">
-            <img src="../images/seasIt.png"/>
             <img src="../images/seasIt.png"/>
             <img src="../images/seasIt.png"/>
             <img src="../images/seasIt.png"/>
