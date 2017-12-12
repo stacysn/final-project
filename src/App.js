@@ -46,7 +46,6 @@ class App extends Component {
       }
     })
     .then((res) => {
-      console.log(res);
       this.toggleSignupModal()
     },
     (err) => {
@@ -77,7 +76,6 @@ class App extends Component {
       }
     })
     .then((res) => {
-      console.log(res, "User is authenticated");
       this.setState({userId: res._id, isLoggedIn: true})
       this.toggleSignInModal
     },
