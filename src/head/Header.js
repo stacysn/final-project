@@ -18,8 +18,8 @@ class Header extends Component {
               </a>
               <a className='brand-logo center'>Seas it</a>
               <ul id='nav-list' className='right'>
-                <li><a onClick={this.props.toggleSignInModal}>Sign In</a></li>
-                <li><a onClick={this.props.toggleSignupModal}>Sign Up</a></li>
+                <li><a style={{fontSize: "20px"}} onClick={this.props.toggleSignInModal}>Sign In</a></li>
+                <li><a style={{fontSize: "20px"}} onClick={this.props.toggleSignupModal}>Sign Up</a></li>
               </ul>
             </nav>
             <SignupModal isSignUpOpen={this.props.isSignUpOpen} toggleSignupModal={this.props.toggleSignupModal} handleSignupSubmit={this.props.handleSignupSubmit} handleChange={this.props.handleChange}
