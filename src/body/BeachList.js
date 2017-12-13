@@ -14,7 +14,6 @@ class BeachList extends Component {
       beachLong: '',
       date: [],
       hour: [],
-      shapeDetail: [],
       currentTime: [],
       beachSpotList: [],
       selectedBeach:null,
