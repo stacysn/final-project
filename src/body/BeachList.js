@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
 import $ from 'jquery'
 import 'materialize-css';
 import 'materialize-css/dist/css/materialize.min.css';
@@ -38,15 +37,12 @@ class BeachList extends Component {
             this.setState({ beachSpotList : [...this.state.beachSpotList, res[0].spot_name] })
             this.setState({ date: res[0].date })
             this.setState({ hour: res[0].hour })
-            // this.setState({ shapeDetail: res[0].shape_detail})
-            // console.log("SHAPE DETAIL", this.state.tide);
             this.setState({ currentTime: currentTime})
             console.log("time:", currentTime);
           });
       });
     }
 
-//click events for each particular beach; try to simplify!
     selectedPleasurePoint = (event) => {
       this.setState({selectedBeach:0})
       this.setState({selectedBeachNumber: 1})
