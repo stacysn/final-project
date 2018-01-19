@@ -28,3 +28,5 @@ class Chart extends Component{
 }
 
 export default Chart;
+
+//redraw in line 24 redraws the chart each time page is rendered 
