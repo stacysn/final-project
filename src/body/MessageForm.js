@@ -19,10 +19,7 @@ class MessageForm extends Component{
   }
 
   changeHandler = (e) => {
-    console.log("THIS IS E", e);
       this.setState({ text : e.target.value });
-      console.log("THIS", this);
-      console.log(e);
   }
 
   render() {
