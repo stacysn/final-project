@@ -37,10 +37,10 @@ Some of the top favorite beaches in Santa Cruz for surfing.
 - User can chat under each beach page with fellow surfers
 
 #### Installation:
-1.) `npm install` to install dependencies
-2.) `mongod` to run the server
-3.) `npm start`
-4.) localhost:3000
+- `npm install` to install dependencies
+- `mongod` to run the database
+- `node server.js` to run server
+- `localhost:3000` Seas-It!
 
 #### Future Features:
 - Have more charts and data about each beach
