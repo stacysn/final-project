@@ -23,6 +23,8 @@ class BeachPage extends Component {
     }
   }
 
+
+//added .done() for code to 'refresh' after size_ft is retrieved
   componentDidMount(){
     // var dis = this;
     let beachURL = `https://cors-anywhere.herokuapp.com/http://api.spitcast.com/api/spot/forecast/${this.props.selectedBeachNumber}`
@@ -50,7 +52,7 @@ class BeachPage extends Component {
         <h1> {this.props.beachSpotList} </h1>
         <h4> Date: {this.props.date} </h4>
         <h4> Current Time: {this.props.currentTime} </h4>
-        
+
         <div>
           <Chart data={this.state.chartData} redraw/>
         </div>
