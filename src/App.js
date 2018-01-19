@@ -17,7 +17,6 @@ class App extends Component {
         signUpPassword: '',
         userName: '',
         password: '',
-        userId: '',
         isLoggedIn: false,
         isSignInOpen: false,
         isSignUpOpen: false,
