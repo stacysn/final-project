@@ -97,10 +97,6 @@ class App extends Component {
       return (
         <div>
 
-          <div className="background-image-container" style={{height: '300px', postition: 'relative', width: '100vw', overflow: "hidden"}}>
-            <div className="background-image" style={{postion: 'relative', top: '0', bottom: '0', right: '0', left: '0'}}> <img src="https://i.imgur.com/Z75BVf5.jpg"/></div>
-          </div>
-
           <div className='section-white'>
             <Header handleChange={(event) => this.handleChange(event)} toggleSignInModal={(event) => this.toggleSignInModal(event)} toggleSignupModal={(event)=> this.toggleSignupModal(event)}
                     handleSignupSubmit={(event) => this.handleSignupSubmit(event)} handleUserNameChange={(event) => this.handleUserNameChange(event)} handlePasswordChange={(event) => this.handlePasswordChange(event)}
@@ -109,18 +105,13 @@ class App extends Component {
             <BodyContainer userId={this.state.userId} isLoggedIn={this.state.isLoggedIn} handleChange={(event => this.handleChange(event))} userName={this.state.userName}/>
           </div>
 
-          <div>
-          <div className="background-image-container" style={{height: '500px', postition: 'relative', width: '100vw', overflow: "hidden"}}>
-              <div className="background-image" style={{postion: 'relative', top: '0', bottom: '0', right: '0', left: '0'}}> <img src="https://i.imgur.com/LuiImFf.png"/></div>
-            </div>
-          </div>
-
-          <footer className="page-footer black">
-            <div className="container">
-              <div className="row">
+        <div className='page-footer'>
+          <footer className='black'>
+            <div className='container'>
+              <div className='row'>
                 <div className="col l6 s12">
                   <h4 className="white-text">About </h4>
-                  <p className="grey-text text-lighten-4" style={{fontSize: '20px'}}> This website is retrieving daily information using the API from <a href="http://www.Spitcast.com">Spitcast</a></p>
+                  <p className="grey-text text-lighten-4" style={{fontSize: '15px'}}> This website is retrieving daily information using the API from <a href="http://www.Spitcast.com">Spitcast</a></p>
                 </div>
               </div>
             </div>
@@ -131,6 +122,7 @@ class App extends Component {
               </div>
             </div>
           </footer>
+        </div>
 
         </div>
       )

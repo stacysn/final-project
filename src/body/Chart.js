@@ -5,7 +5,7 @@ import $ from 'jquery'
 class Chart extends Component{
   render(){
     return (
-      <div className="chart">
+      <div className="chart" style={{backgroundColor: 'white'}}>
         <Bar
           ref='chart'
         	data={this.props.data}
@@ -29,4 +29,4 @@ class Chart extends Component{
 
 export default Chart;
 
-//redraw in line 24 redraws the chart each time page is rendered 
+//redraw in line 24 redraws the chart each time page is rendered

@@ -70,7 +70,7 @@ class BeachList extends Component {
     render(){
       if (this.state.selectedBeach === null) {
         return (
-        <div className="list-group teal lighten-2 center">
+        <div className="list-group center">
             <h1> Santa Cruz Popular Beaches </h1>
               <h3><a href="#" className="waves-effect waves-light btn-large list-group-item-action black lighten-2" id="pleasure-point" onClick={this.selectedPleasurePoint}>{this.state.beachSpotList[0]}</a></h3>
               <h3><a href="#" className="waves-effect waves-light btn-large list-group-item-action black lighten-2" id="steamer-lane" onClick={this.selectedSteamers}>{this.state.beachSpotList[1]}</a></h3>

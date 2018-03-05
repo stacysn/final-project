@@ -2,14 +2,12 @@
   text-align: center;
 }
 
-
 .App-header {
   background-color: #222;
   height: 150px;
   padding: 20px;
   color: white;
 }
-
 
 body {
   display: flex;
@@ -32,4 +30,55 @@ main {
 
 .page-footer, #nav-list, .input-field, #navList, .beach-info, .create-modal{
   font-family: 'Amatic SC', cursive;
+}
+
+.about-app{
+  background-image: url("https://i.imgur.com/LuiImFf.png");
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 221px;
+  font-size: 6vw;
+}
+
+.home{
+  position: relative;
+  top: 0;
+  background-color: black;
+}
+
+.page-footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background-color: black;
+}
+
+@media(max-width: 1000px) {
+  html {
+    font-size: 3vw;
+  }
+  .details{
+    width: 5em;
+  }
+}
+
+/*Beach List*/
+.list-group{
+  background-image: url("https://i.imgur.com/LuiImFf.png");
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 221px;
+  margin-top: auto;
+}
+
+/*Beach Page*/
+.beach-info{
+  background-image: url("https://i.imgur.com/LuiImFf.png");
+  color: white
 }
