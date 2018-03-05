@@ -33,3 +33,26 @@ main {
 .page-footer, #nav-list, .input-field, #navList, .beach-info, .create-modal{
   font-family: 'Amatic SC', cursive;
 }
+
+.about-app{
+  background-image: url("https://i.imgur.com/LuiImFf.png");
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 221px;
+}
+
+.home{
+  position: relative;
+  top: 0;
+}
+
+.page-footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background-color: black
+}

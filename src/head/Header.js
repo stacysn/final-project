@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import SignupModal from './SignupModal.js'
 import SignInModal from './SignInModal.js'
+import '../App.css';
 
 
 class Header extends Component {
@@ -8,7 +9,7 @@ class Header extends Component {
     if (!this.props.isLoggedIn) {
       return (
         <header>
-        <div className="home">
+          <div className="home">
             <nav className='black lighten-1'>
               <a className="brand-logo center">
                 <img src="../images/seasIt.png"/>
