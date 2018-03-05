@@ -55,6 +55,7 @@ main {
     height: 100px;
     width: 100%;
     background-color: black;
+    padding-top: 45px;
 }
 
 @media(max-width: 1000px) {
