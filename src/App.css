@@ -66,6 +66,7 @@ main {
   }
 }
 
+/*Beach List*/
 .list-group{
   background-image: url("https://i.imgur.com/LuiImFf.png");
   bottom: 0;
@@ -74,4 +75,10 @@ main {
   left: 0;
   padding: 221px;
   margin-top: auto;
+}
+
+/*Beach Page*/
+.beach-info{
+  background-image: url("https://i.imgur.com/LuiImFf.png");
+  color: white
 }
