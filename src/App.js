@@ -105,13 +105,13 @@ class App extends Component {
             <BodyContainer userId={this.state.userId} isLoggedIn={this.state.isLoggedIn} handleChange={(event => this.handleChange(event))} userName={this.state.userName}/>
           </div>
 
-        <div className='page-footer' >
-          <footer className="black" >
-            <div className="container">
-              <div className="row">
+        <div className='page-footer'>
+          <footer className='black'>
+            <div className='container'>
+              <div className='row'>
                 <div className="col l6 s12">
                   <h4 className="white-text">About </h4>
-                  <p className="grey-text text-lighten-4" style={{fontSize: '20px'}}> This website is retrieving daily information using the API from <a href="http://www.Spitcast.com">Spitcast</a></p>
+                  <p className="grey-text text-lighten-4" style={{fontSize: '15px'}}> This website is retrieving daily information using the API from <a href="http://www.Spitcast.com">Spitcast</a></p>
                 </div>
               </div>
             </div>
@@ -130,25 +130,3 @@ class App extends Component {
 }
 
 export default App;
-//
-// <div className="background-image-container" style={{height: '300px', postition: 'relative', width: '100vw', overflow: "hidden"}}>
-//   <div className="background-image" style={{postion: 'relative', top: '0', bottom: '0', right: '0', left: '0'}}> <img src="https://i.imgur.com/Z75BVf5.jpg"/></div>
-// </div>
-
-
-// <footer className="page-footer black" style={{position: 'relative'}}>
-//   <div className="container">
-//     <div className="row">
-//       <div className="col l6 s12">
-//         <h4 className="white-text">About </h4>
-//         <p className="grey-text text-lighten-4" style={{fontSize: '20px'}}> This website is retrieving daily information using the API from <a href="http://www.Spitcast.com">Spitcast</a></p>
-//       </div>
-//     </div>
-//   </div>
-//   <div className="footer-copyright">
-//     <div className="container" style={{fontSize: '16px'}}>
-//     © 2017 Copyright StaySeaFunSurf
-//     Created by <a href='http://stacysuen.rocks'>Stacy Suen</a>
-//     </div>
-//   </div>
-// </footer>

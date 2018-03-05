@@ -2,14 +2,12 @@
   text-align: center;
 }
 
-
 .App-header {
   background-color: #222;
   height: 150px;
   padding: 20px;
   color: white;
 }
-
 
 body {
   display: flex;
@@ -41,11 +39,13 @@ main {
   right: 0;
   left: 0;
   padding: 221px;
+  font-size: 6vw;
 }
 
 .home{
   position: relative;
   top: 0;
+  background-color: black;
 }
 
 .page-footer {
@@ -54,5 +54,14 @@ main {
     bottom: 0;
     height: 100px;
     width: 100%;
-    background-color: black
+    background-color: black;
+}
+
+@media(max-width: 1000px) {
+  html {
+    font-size: 3vw;
+  }
+  .details{
+    width: 5em;
+  }
 }
